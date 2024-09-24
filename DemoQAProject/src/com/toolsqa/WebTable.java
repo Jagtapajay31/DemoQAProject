@@ -5,12 +5,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class WebTable {
 	
 	WebDriver driver;
-	@BeforeTest
+	@BeforeClass
 	public void before() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","E:\\Tops 2024\\Selenium\\chromedriver.exe");
 		driver=new ChromeDriver();
@@ -19,6 +20,12 @@ public class WebTable {
         WebElement elementToScrollTo = driver.findElement(By.id("addNewRecordButton"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].scrollIntoView(true);",elementToScrollTo);
+		Thread.sleep(2000);
+	}
+	
+	@Test
+	public void test() throws InterruptedException {
+		driver.findElement(By.id("addNewRecordButton")).click();
 		Thread.sleep(2000);
 	}
 }
