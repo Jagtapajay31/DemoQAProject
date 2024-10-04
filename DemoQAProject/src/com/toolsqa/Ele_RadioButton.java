@@ -14,12 +14,13 @@ public class Ele_RadioButton {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		
-		driver.findElement(By.cssSelector("label[for='yesRadio']")).click();
+
+		driver.findElement(By.id("item-2")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("label[for='yesRadio']")).click();		
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("label[for='impressiveRadio']")).click();
 		Thread.sleep(2000);
-//		driver.findElement(By.cssSelector("label[for='noRadio']")).click();
-//		Thread.sleep(2000); button not click able
 		
 		driver.close();
 	}

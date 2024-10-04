@@ -24,8 +24,6 @@ public class Ele_TextBox {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='userEmail']")).sendKeys("tops@gmail.com");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//textarea[@id='currentAddress']")).sendKeys("301, Jeevandeep Complex, Ring Rd, beside Nirmal Hospital, Jeevandeep Society, Sagrampura, Surat, Gujarat 395002");
-		Thread.sleep(2000);
 		
 		WebElement address=driver.findElement(By.id("currentAddress"));
 		WebElement peradd=driver.findElement(By.id("permanentAddress"));

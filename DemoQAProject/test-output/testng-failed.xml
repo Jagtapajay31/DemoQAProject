@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.toolsqa.Register">
+      <class name="com.toolsqa.Widgets">
         <methods>
-          <include name="username"/>
-          <include name="firstname"/>
-          <include name="password"/>
-          <include name="click"/>
-          <include name="lastname"/>
-          <include name="after"/>
-          <include name="before"/>
-          <include name="register"/>
+          <include name="widgetstools"/>
         </methods>
-      </class> <!-- com.toolsqa.Register -->
+      </class> <!-- com.toolsqa.Widgets -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
