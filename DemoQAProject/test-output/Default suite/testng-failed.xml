@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.toolsqa.Widgets">
+      <class name="com.toolsqa.Interactions">
         <methods>
-          <include name="widgetstools"/>
+          <include name="sortable"/>
         </methods>
-      </class> <!-- com.toolsqa.Widgets -->
+      </class> <!-- com.toolsqa.Interactions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
